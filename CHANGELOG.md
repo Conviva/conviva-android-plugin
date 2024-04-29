@@ -8,7 +8,7 @@ Currently the plugin instruments the View.OnClickListener.onClick(View v) functi
 
 # (29/APR/2024)
 ### 0.3.3 & 0.2.3
-* Enhances the Android Conviva Plugin to exclude the packages from the Conviva Instrumentation. To know more, refer to the [section](https://github.com/Conviva/conviva-android-plugin?tab=readme-ov-file#to-exclude-the-instrumentation-of-any-specific-package). By default, Conviva excludes the instrumentation of the packages for android, androidx, kotlin, kotlinx and com.conviva.
+* Enhances the *Android Conviva Plugin* to [exclude the packages](https://github.com/Conviva/conviva-android-plugin?tab=readme-ov-file#to-exclude-the-instrumentation-of-any-specific-package) from the *Conviva Instrumentation*. By default, Conviva excludes the instrumentation of the packages for `android`, `androidx`, `kotlin`, `kotlinx` and `com.conviva`.
 * Fixes the bytecode instrumentation to the wrapper (Decorator Pattern), instead of making the replacements independent of other instrumentations.
 
 
