@@ -6,6 +6,10 @@ Conviva has two versions of plugins. Version 0.2.x(0.2.1, 0.2.2...) supports the
 
 Currently the plugin instruments the View.OnClickListener.onClick(View v) functions and network related classes URLConnection and the Okhttp library.
 
+# (13/MAY/2024)
+### 0.2.4
+* Enhances the Conviva Android Plugin to instrument the [onNewIntent(Intent intent)](https://developer.android.com/reference/android/app/Activity#onNewIntent(android.content.Intent)) function to get callbacks of intents delivered to the activity already running in the foreground.
+
 # (29/APR/2024)
 ### 0.3.3 & 0.2.3
 * Enhances the *Android Conviva Plugin* to [exclude the packages](https://github.com/Conviva/conviva-android-plugin?tab=readme-ov-file#to-exclude-the-instrumentation-of-any-specific-package) from the *Conviva Instrumentation*. By default, Conviva excludes the instrumentation of the packages for `android`, `androidx`, `kotlin`, `kotlinx` and `com.conviva`.
