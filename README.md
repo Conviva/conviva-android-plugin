@@ -3,22 +3,18 @@ Use Conviva Android Plugin for the Byte Code Instrumentation.
 
 ## Supported Android Gradle Plugin Versions
 
-Android Gradle Plugin Version >= 8.x \
-Android Gradle Plugin Version < 8.x
+Android Gradle Plugin Version >= 7.2 \
+Android Gradle Plugin Version < 7.2
 
-## Collection of the user click events of any clickable views via instrumentation
-This feature supports tracking the user click events of views when a View.OnClickListener is set in the application and is supported from 0.7.3 version onwards
-
+## Plugin Integration
 The following example shows how to include the plugin:
+
 ```
 // in the root or project-level build.gradle
 dependencies {
   ...
-// For Android Gradle Plugin version 8.0 and above, use
+// Unified Conviva Plugin supported from 0.3.5 onwards, use
 classpath 'com.conviva.sdk:android-plugin:0.3.x'
-
-// For Android Gradle Plugin version below 8.0, use
-classpath 'com.conviva.sdk:android-plugin:0.2.x'
   ...
 }
 
@@ -34,19 +30,22 @@ plugins {
 }
 
 ```
-    
-## Collection of the OkHttp/Retrofit/HTTPSUrlConnection/HTTPUrlConnection NetworkRequest Tracking via instrumentation
-This feature supports to track the Network Requests triggerred with in application and third party libraries scope as well supported from 0.7.1 version onwards
+
+<details>
+  <summary><b> Deprecated instructions for including Conviva Plugin <= 0.3.4 based on Android Gradle Plugin versions 7.2 and above or below </b></summary>
+
+## Deprecated instructions for including Conviva Plugin <= 0.3.4 based on Android Gradle Plugin versions 7.2 and above or below
 
 The following example shows how to include the plugin:
+
 ```
 // in the root or project-level build.gradle
 dependencies {
   ...
-// For Android Gradle Plugin version 8.0 and above, use
+  // For Android Gradle Plugin version 7.2 and above, use
 classpath 'com.conviva.sdk:android-plugin:0.3.x'
 
-// For Android Gradle Plugin version below 8.0, use
+// For Android Gradle Plugin version below 7.2, use
 classpath 'com.conviva.sdk:android-plugin:0.2.x'
   ...
 }
@@ -61,14 +60,29 @@ apply plugin: 'com.conviva.sdk.android-plugin'
 plugins {
     id 'com.conviva.sdk.android-plugin'
 }
-
 ```
-## To Exclude the instrumentation of any specific package
-By default, Conviva excludes the instrumentation of the packages for android, androidx, kotlin, kotlinx and com.conviva. 
+</details>
+
+## Feature Support and Dependencies
+
+| Features                         | Conviva Sensor Version | Conviva Plugin Version |
+|---------------------------------------|-------------------------------|--------------------------|
+| **User Clicks detection**              | [>= 0.7.1](https://github.com/Conviva/conviva-android-appanalytics/releases/tag/v0.7.1)                       | [>= 0.2.3](https://github.com/Conviva/conviva-android-plugin/releases/tag/v0.2.3)                |
+| **Network Request detection**          | [>= 0.7.3](https://github.com/Conviva/conviva-android-appanalytics/releases/tag/v0.7.3)                       | [>= 0.2.3](https://github.com/Conviva/conviva-android-plugin/releases/tag/v0.2.3)                 |
+| **Fragment auto detection** | [>= 0.9.4](https://github.com/Conviva/conviva-android-appanalytics/releases/tag/v0.9.4)                       | [>= 0.3.5](https://github.com/Conviva/conviva-android-plugin/releases/tag/v0.3.5)               |
+| **Compose navigation auto detection** | [>= 0.9.4](https://github.com/Conviva/conviva-android-appanalytics/releases/tag/v0.9.4)                       | [>= 0.3.5](https://github.com/Conviva/conviva-android-plugin/releases/tag/v0.3.5)  |
+| **Compose click auto detection** | [>= 0.9.4](https://github.com/Conviva/conviva-android-appanalytics/releases/tag/v0.9.4)                       | [>= 0.3.5](https://github.com/Conviva/conviva-android-plugin/releases/tag/v0.3.5) |
+| **Trace-parent Header Generation and Collection** | [>= 0.9.4](https://github.com/Conviva/conviva-android-appanalytics/releases/tag/v0.9.4)                       | [>= 0.2.3](https://github.com/Conviva/conviva-android-plugin/releases/tag/v0.2.3)
+
+
+## Exclude Instrumentation for Specific Packages
+
+By default, Conviva excludes the instrumentation of packages for `android`, `androidx`, `kotlin`, `kotlinx`, and `com.conviva`.
 
 The following example shows how to exclude any specific package from instrumentation:
+
 ```
-// For Android Gradle Plugin version below 8.0
+// For Android Gradle Plugin version below 7.2
 // in the app build.gradle
 ...
 android {   
@@ -80,7 +94,7 @@ android {
     ...
 }
 
-// For Android Gradle Plugin version 8.0 and above
+// For Android Gradle Plugin version 7.2 and above
 // in the app build.gradle
 ...
 android {   
@@ -92,7 +106,3 @@ android {
     ...
 }
 ```
-
-
-
-
