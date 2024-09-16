@@ -4,7 +4,9 @@ Use Conviva Android Plugin for the Byte Code Instrumentation.
 ## Supported Android Gradle Plugin Versions
 
 Android Gradle Plugin Version >= 7.2 \
-Android Gradle Plugin Version < 7.2
+Android Gradle Plugin Version < 7.0
+
+#### Note : Conviva Gradle Plugin do not support for the Android Gradle Plugin versions >= 7.0 and < 7.2
 
 ## Plugin Integration
 The following example shows how to include the plugin:
@@ -45,7 +47,7 @@ dependencies {
   // For Android Gradle Plugin version 7.2 and above, use
 classpath 'com.conviva.sdk:android-plugin:0.3.x'
 
-// For Android Gradle Plugin version below 7.2, use
+// For Android Gradle Plugin version below 7.0, use
 classpath 'com.conviva.sdk:android-plugin:0.2.x'
   ...
 }
@@ -82,7 +84,7 @@ By default, Conviva excludes the instrumentation of packages for `android`, `and
 The following example shows how to exclude any specific package from instrumentation:
 
 ```
-// For Android Gradle Plugin version below 7.2
+// For Android Gradle Plugin version below 7.0
 // in the app build.gradle
 ...
 android {   
