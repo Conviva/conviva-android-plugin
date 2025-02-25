@@ -11,6 +11,8 @@ Android Gradle Plugin Version < 7.0
 ## Plugin Integration
 The following example shows how to include the plugin:
 
+**Groovy(build.gradle)**
+
 ```
 // in the root or project-level build.gradle
 dependencies {
@@ -23,12 +25,13 @@ classpath 'com.conviva.sdk:android-plugin:0.3.x'
 // in the app, build.gradle at the end of plugins add the
 ...
 apply plugin: 'com.conviva.sdk.android-plugin'
+```
 
-
-
+**Kotlin(build.gradle.kts)**
+```
 // in the app, build.gradle.kts at the end of plugins add the
 plugins {
-    id 'com.conviva.sdk.android-plugin'
+    id 'com.conviva.sdk.android-plugin' version 'x.x.x'
 }
 
 ```
