@@ -17,8 +17,8 @@ The following example shows how to include the plugin:
 // in the root or project-level build.gradle
 dependencies {
   ...
-// Unified Conviva Plugin supported from 0.3.5 onwards, use
-classpath 'com.conviva.sdk:android-plugin:0.3.x'
+  // Unified Conviva Plugin supported from 0.3.5 onwards, use
+  classpath 'com.conviva.sdk:android-plugin:0.3.x'
   ...
 }
 
@@ -29,7 +29,8 @@ apply plugin: 'com.conviva.sdk.android-plugin'
 
 **Kotlin(build.gradle.kts)**
 ```
-// in the app, build.gradle.kts at the end of plugins add the
+
+// Add the plugin to the plugins block
 plugins {
     id 'com.conviva.sdk.android-plugin' version 'x.x.x'
 }
