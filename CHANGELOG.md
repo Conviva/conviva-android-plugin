@@ -6,6 +6,9 @@ Conviva has two versions of plugins. Version 0.2.x(0.2.1, 0.2.2...) supports the
 
 Currently the plugin instruments the View.OnClickListener.onClick(View v) functions and network related classes URLConnection and the Okhttp library.
 
+# 0.3.6 (22/APR/2025)
+* Supports tracking of http requests made by Media3 ExoPlayer using `DefaultHttpDataSource`.
+
 # 0.3.5 (19/JUL/2024)
 * Supports the instrumentation of Jetpack Compose NavController and Clickable classes to auto detect the compose navigation and clicks
 * Instruments the androidx NavigationController class to auto detect the navigation using fragments.
