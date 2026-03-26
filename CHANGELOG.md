@@ -6,6 +6,9 @@ Conviva has two versions of plugins. Version 0.2.x(0.2.1, 0.2.2...) supports the
 
 Currently the plugin instruments the View.OnClickListener.onClick(View v) functions and network related classes URLConnection and the Okhttp library.
 
+# 0.3.8 (26/MAR/2026)
+* Enhances Crash Event metadata by adding Build Variant
+
 # 0.3.7 (27/FEB/2026)
 * Enhances to support Android Gradle Plugin (AGP) 9.x.x and above.
 
