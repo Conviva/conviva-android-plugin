@@ -6,6 +6,9 @@ Conviva has two versions of plugins. Version 0.2.x(0.2.1, 0.2.2...) supports the
 
 Currently the plugin instruments the View.OnClickListener.onClick(View v) functions and network related classes URLConnection and the Okhttp library.
 
+# 0.3.9 (21/MAY/2026)
+* Added support for WebView constructor instrumentation. This automatically injects the JavascriptInterface required for seamless ClientId sharing with the JS SDK running inside the WebView.
+
 # 0.3.8 (26/MAR/2026)
 * Enhances Crash Event metadata by adding Build Variant
 
